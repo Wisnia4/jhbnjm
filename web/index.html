@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form action="formularz.jsp">
+            
+        <div>Dane Konta</div>
+        Login: <input type="text" name="login"  maxlength="20" required>
+        Hasło: <input type="password" name="haslo"  maxlength="20" required>
+        Powtórz hasło: <input type="password" name="powtorz haslo"  maxlength="20" required><br/>
+        <br/>
+        <div>Dane Personalne</div>
+         Pesel: <input type="text" name="pesel"  maxlength="11" required>
+         Nazwisko: <input type="text" name="nazwisko"  maxlength="50" required>
+         Imie: <input type="text" name="imie"  maxlength="30" required>
+         Nr_dowodu: <input type="text" name="nrdow"  maxlength="20" required>
+         Płeć: <input type="radio" name="plec" value="kobieta">kobieta
+                <input type="radio" name="plec" value="nmezczyzna">mezczyzna<br>
+         <br/>
+           <div>Dane Adresowe</div>
+           Email: <input type="text" name="email"  maxlength="50" required>
+           Kod_pocztowy: <input type="text" name="kod"  maxlength="6" required>
+           Miejscowosc: <input type="text" name="miejs"  maxlength="50" required><br/>
+           Ulica: <input type="text" name="ulica"  maxlength="50" >
+           Nr domu: <input type="text" name="dom"  maxlength="5" required>
+           
+           Nr_lokalu: <input type="text" name="lokal"  maxlength="5" >
+           Wojewodztwo: <select name="woje" size="1">
+                            <option>Małopolska</option>
+                            <option>Podkarpackie</option>
+                            <option>Świętokrzyskie</option>
+                            <option>Mazowieckie</option>
+                            </select><br/>
+           
+           <br/>
+           <div>Ankieta</div>
+           Informację o kursach mam z:<br>
+                                       <input type="checkbox" name="kurs" value="strona www">strona www
+                                       <input type="checkbox" name="kurs" value="prasa">prasa
+                                       <input type="checkbox" name="kurs" value="znajomi">znajomi
+                                       <input type="checkbox" name="kurs" value="internet">internet
+                                       <input type="submit" value ="Wyslij">
+           
+        </form>
+           
+    </body>
+</html>
